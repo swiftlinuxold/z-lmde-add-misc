@@ -31,6 +31,7 @@ os.system('apt-get install -y sylpheed') # Add Sylpheed email client
 os.system('apt-get install -y xscreensaver') # Add XScreenSaver
 os.system('apt-get install -y geany') # Add the Geany editor
 os.system('apt-get install -y searchmonkey') # Add the SearchMonkey file search program
+os.system('apt-get install -y pcmanfm') # Add the PCManFM file manager
 
 import shutil
 # Install and configure Conky
