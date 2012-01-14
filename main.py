@@ -24,8 +24,8 @@ else:
 
 # THIS IS THE SCRIPT FOR ADDING LIGHTWEIGHT APPLICATIONS
 
-print '====================================='
-print 'BEGIN ADDING LIGHTWEIGHT APPLICATIONS'
+print '=============================='
+print 'BEGIN ADDING MISC APPLICATIONS'
 
 os.system('apt-get install -y sylpheed') # Add Sylpheed email client
 os.system('apt-get install -y geany') # Add the Geany editor
@@ -35,5 +35,5 @@ os.system ('apt-get install -y roxterm') # Add ROXTerm
 os.system('apt-get install -y xscreensaver') # Add XScreenSaver
 
 
-print 'FINISHED ADDING LIGHTWEIGHT APPLICATIONS'
-print '========================================'
+print 'FINISHED ADDING MISC APPLICATIONS'
+print '================================='
