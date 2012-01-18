@@ -33,6 +33,7 @@ os.system('apt-get install -y searchmonkey') # Add the SearchMonkey file search 
 os.system('apt-get install -y pcmanfm') # Add the PCManFM file manager
 os.system ('apt-get install -y roxterm') # Add ROXTerm
 os.system('apt-get install -y xscreensaver') # Add XScreenSaver
+os.system('apt-get install -y mtpaint') # Add MTPaint
 
 
 print 'FINISHED ADDING MISC APPLICATIONS'
