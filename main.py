@@ -40,5 +40,12 @@ os.system('apt-get install -y mtpaint') # Add MTPaint
 os.system('apt-get install -y lxde-icon-theme') # Add LXDE icon theme
 os.system('rm /usr/share/icons/nuoveXT2/icon-theme.cache') # 23.9 MB file
 
+# Install Ceni
+os.system('wget http://www.mirrorservice.org/sites/sidux.com/sidux/debian/pool/main/c/ceni/ceni_2.23_all.deb')
+os.system('dpkg -i ceni_2.23_all.deb')
+os.system('rm ceni_2.23_all.deb')
+os.system('dpkg install -f')
+
+
 print 'FINISHED ADDING MISC APPLICATIONS'
 print '================================='
