@@ -44,8 +44,9 @@ os.system('rm /usr/share/icons/nuoveXT2/icon-theme.cache') # 23.9 MB file
 os.system('wget http://www.mirrorservice.org/sites/sidux.com/sidux/debian/pool/main/c/ceni/ceni_2.23_all.deb')
 os.system('dpkg -i ceni_2.23_all.deb')
 os.system('rm ceni_2.23_all.deb')
-os.system('dpkg install -f')
+os.system('apt-get install -f')
 
+os.system('apt-get install -y rutilt') # Add RutilT
 
 print 'FINISHED ADDING MISC APPLICATIONS'
 print '================================='
