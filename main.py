@@ -41,6 +41,9 @@ os.system('apt-get install -y lxde-icon-theme') # Add LXDE icon theme
 os.system('rm /usr/share/icons/nuoveXT2/icon-theme.cache') # 23.9 MB file
 
 # Install Ceni
+os.system('apt-get install -y libcurses-perl libcurses-ui-perl') # Dependencies of ceni
+os.system('apt-get install -y libexpect-perl libio-pty-perl') # Dependencies of ceni
+os.system('apt-get install -y libio-stty-perl libterm-readkey-perl') # Dependencies of ceni
 os.system('wget http://www.mirrorservice.org/sites/sidux.com/sidux/debian/pool/main/c/ceni/ceni_2.23_all.deb')
 os.system('dpkg -i ceni_2.23_all.deb')
 os.system('rm ceni_2.23_all.deb')
