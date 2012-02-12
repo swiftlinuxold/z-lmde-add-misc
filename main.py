@@ -51,7 +51,7 @@ os.system('apt-get install -f')
 
 os.system('apt-get install -y rutilt') # Add RutilT
 
-os.system('apt-get install -y smartmontools')
+os.system('apt-get install -y smartmontools gsmartcontrol smart-notifier')
 
 print 'FINISHED ADDING MISC APPLICATIONS'
 print '================================='
