@@ -51,5 +51,7 @@ os.system('apt-get install -f')
 
 os.system('apt-get install -y rutilt') # Add RutilT
 
+os.system('apt-get install -y smartmontools')
+
 print 'FINISHED ADDING MISC APPLICATIONS'
 print '================================='
