@@ -51,8 +51,13 @@ os.system('apt-get install -f')
 
 os.system('apt-get install -y rutilt') # Add RutilT
 
-# NOTE: smart-notifier NOT installed because it triggers a reboot
+
 os.system('apt-get install -y smartmontools gsmartcontrol')
+
+# NOTE: smart-notifier is installed only for chroot mode, because it triggers a reboot on a live system
+if (is_chroot):
+    os.system('apt-get install -y smart-notifier')
+    
 
 print 'FINISHED ADDING MISC APPLICATIONS'
 print '================================='
