@@ -37,8 +37,6 @@ os.system('apt-get install -y pcmanfm') # Add the PCManFM file manager
 os.system ('apt-get install -y roxterm') # Add ROXTerm
 os.system('apt-get install -y xscreensaver') # Add XScreenSaver
 os.system('apt-get install -y mtpaint') # Add MTPaint
-os.system('apt-get install -y lxde-icon-theme') # Add LXDE icon theme
-os.system('rm /usr/share/icons/nuoveXT2/icon-theme.cache') # 23.9 MB file
 
 # Install Ceni
 os.system('apt-get install -y libcurses-perl libcurses-ui-perl') # Dependencies of ceni
