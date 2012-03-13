@@ -37,6 +37,7 @@ os.system('apt-get install -y pcmanfm') # Add the PCManFM file manager
 os.system ('apt-get install -y roxterm') # Add ROXTerm
 os.system('apt-get install -y xscreensaver') # Add XScreenSaver
 os.system('apt-get install -y mtpaint') # Add MTPaint
+os.system('apt-get install -y epdfview') # Add lightweight PDF Viewer
 
 # Install Ceni
 os.system('apt-get install -y libcurses-perl libcurses-ui-perl') # Dependencies of ceni
