@@ -48,8 +48,6 @@ os.system('dpkg -i ceni_2.23_all.deb')
 os.system('rm ceni_2.23_all.deb')
 os.system('apt-get install -f')
 
-os.system('apt-get install -y rutilt') # Add RutilT
-
 os.system('apt-get install -y smartmontools gsmartcontrol')
 
 # NOTE: smart-notifier is installed only for chroot mode, because it triggers a reboot on a live system
