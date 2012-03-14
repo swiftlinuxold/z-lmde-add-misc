@@ -39,15 +39,6 @@ os.system('apt-get install -y xscreensaver') # Add XScreenSaver
 os.system('apt-get install -y mtpaint') # Add MTPaint
 os.system('apt-get install -y epdfview') # Add lightweight PDF Viewer
 
-# Install Ceni
-os.system('apt-get install -y libcurses-perl libcurses-ui-perl') # Dependencies of ceni
-os.system('apt-get install -y libexpect-perl libio-pty-perl') # Dependencies of ceni
-os.system('apt-get install -y libio-stty-perl libterm-readkey-perl') # Dependencies of ceni
-os.system('wget http://www.mirrorservice.org/sites/sidux.com/sidux/debian/pool/main/c/ceni/ceni_2.23_all.deb')
-os.system('dpkg -i ceni_2.23_all.deb')
-os.system('rm ceni_2.23_all.deb')
-os.system('apt-get install -f')
-
 os.system('apt-get install -y smartmontools gsmartcontrol')
 
 # NOTE: smart-notifier is installed only for chroot mode, because it triggers a reboot on a live system
