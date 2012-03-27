@@ -33,6 +33,7 @@ def add_pkg (packages):
 
 print '=============================='
 print 'BEGIN ADDING MISC APPLICATIONS'
+print 'NOTE: The screen output is suppressed due to excessive volume.'
 
 #os.system('apt-get install -y sylpheed') # Add Sylpheed email client
 add_pkg ('sylpheed')
