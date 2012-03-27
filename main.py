@@ -27,25 +27,38 @@ else:
 
 # THIS IS THE SCRIPT FOR ADDING LIGHTWEIGHT APPLICATIONS
 
+def add_pkg (packages):
+    os.system ('echo INSTALLING ' + packages)
+    os.system ('apt-get install -qq ' + packages)
+
 print '=============================='
 print 'BEGIN ADDING MISC APPLICATIONS'
 
-os.system('apt-get install -y sylpheed') # Add Sylpheed email client
-os.system('apt-get install -y geany') # Add the Geany editor
-os.system('apt-get install -y searchmonkey') # Add the SearchMonkey file search program
-os.system('apt-get install -y pcmanfm') # Add the PCManFM file manager
-os.system ('apt-get install -y roxterm') # Add ROXTerm
-os.system('apt-get install -y xscreensaver') # Add XScreenSaver
-os.system('apt-get install -y mtpaint') # Add MTPaint
-os.system('apt-get install -y epdfview') # Add lightweight PDF Viewer
+#os.system('apt-get install -y sylpheed') # Add Sylpheed email client
+add_pkg ('sylpheed')
+#os.system('apt-get install -y geany') # Add the Geany editor
+add_pkg ('geany')
+#os.system('apt-get install -y searchmonkey') # Add the SearchMonkey file search program
+add_pkg ('searchmonkey')
+#os.system('apt-get install -y pcmanfm') # Add the PCManFM file manager
+add_pkg ('pcmanfm')
+#os.system ('apt-get install -y roxterm') # Add ROXTerm
+add_pkg ('roxterm')
+#os.system('apt-get install -y mtpaint') # Add MTPaint
+add_pkg ('mtpaint')
+#os.system('apt-get install -y epdfview') # Add lightweight PDF Viewer
+add_pkg ('epdfview')
 
-os.system('apt-get install -y smartmontools gsmartcontrol')
+#os.system('apt-get install -y smartmontools gsmartcontrol')
+add_pkg ('smartmontools gsmartcontrol')
 
 # NOTE: smart-notifier is installed only for chroot mode, because it triggers a reboot on a live system
 if (is_chroot):
-    os.system('apt-get install -y smart-notifier')
+    #os.system('apt-get install -y smart-notifier')
+    add_pkg ('smart-notifier')
     
-os.system('apt-get install -y mpg123') # Plays MP3s from command line, needed for special editions
+#os.system('apt-get install -y mpg123') # Plays MP3s from command line, needed for special editions
+add_pkg ('mpg123')
     
 
 print 'FINISHED ADDING MISC APPLICATIONS'
