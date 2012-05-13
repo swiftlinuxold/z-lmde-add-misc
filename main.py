@@ -35,30 +35,20 @@ print '=============================='
 print 'BEGIN ADDING MISC APPLICATIONS'
 print 'NOTE: The screen output is suppressed due to excessive volume.'
 
-#os.system('apt-get install -y sylpheed') # Add Sylpheed email client
 add_pkg ('sylpheed')
-#os.system('apt-get install -y geany') # Add the Geany editor
 add_pkg ('geany')
-#os.system('apt-get install -y searchmonkey') # Add the SearchMonkey file search program
 add_pkg ('searchmonkey')
-#os.system('apt-get install -y pcmanfm') # Add the PCManFM file manager
 add_pkg ('pcmanfm')
-#os.system ('apt-get install -y roxterm') # Add ROXTerm
 add_pkg ('roxterm')
-#os.system('apt-get install -y mtpaint') # Add MTPaint
 add_pkg ('mtpaint')
-#os.system('apt-get install -y epdfview') # Add lightweight PDF Viewer
 add_pkg ('epdfview')
 
-#os.system('apt-get install -y smartmontools gsmartcontrol')
 add_pkg ('smartmontools gsmartcontrol')
 
 # NOTE: smart-notifier is installed only for chroot mode, because it triggers a reboot on a live system
 if (is_chroot):
-    #os.system('apt-get install -y smart-notifier')
     add_pkg ('smart-notifier')
     
-#os.system('apt-get install -y mpg123') # Plays MP3s from command line, needed for special editions
 add_pkg ('mpg123')
     
 
