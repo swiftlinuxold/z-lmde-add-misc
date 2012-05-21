@@ -42,6 +42,7 @@ add_pkg ('pcmanfm')
 add_pkg ('roxterm')
 add_pkg ('mtpaint')
 add_pkg ('epdfview')
+add_pkg ('parole')
 
 add_pkg ('smartmontools gsmartcontrol')
 
